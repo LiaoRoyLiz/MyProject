@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#0097a7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:paddingBottom="8dp"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="行事曆"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/canl"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:drawableTop="@drawable/ic_menu_today"
+                android:padding="5dp" />
+
+            <Button
+                android:text="備忘錄"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/note"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/ic_menu_start_conversation"
+                android:background="@android:color/holo_green_light"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:id="@+id/textView5"
+                android:layout_height="350dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="首頁"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/ic_menu_home"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
